@@ -1,4 +1,4 @@
-import { useState, type FC } from "react";
+import { type FC } from "react";
 
 import { BlurButtonWithText } from "@/components/UI/BlurButtonWithText/BlurButtonWithText";
 import { Typography } from "@/components/UI/Typography/Typography";
@@ -12,8 +12,6 @@ import { ButtonWithIcon } from "@/components/UI/ButtonWithIcon/ButtonWithIcon";
 import { Stepper } from "@/components/UI/Stepper/Stepper";
 
 export const IndexPage: FC = () => {
-  // const [currentTab, setCurrentTab] = useState(0);
-
   return (
     <Container>
       <Image src={ByBitLogo} style={{ height: 292 }} />
