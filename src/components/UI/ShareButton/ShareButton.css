@@ -1,4 +1,4 @@
-.button-with-icon {
+.share-button {
   padding-block: 12px;
   width: 100%;
   display: flex;
@@ -6,6 +6,7 @@
   gap: 8px;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
   background-color: var(--small-white-button);
   color: var(--text-color);
   border: none;
