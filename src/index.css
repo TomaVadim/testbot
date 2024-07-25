@@ -1,5 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+:root {
+  --bg-color: rgba(6, 5, 5, 1);
+  --header-bg-color: rgba(33, 33, 33, 1);
+  --white-color: rgba(255, 255, 255, 1);
+  --small-white-button: rgba(255, 255, 255, 0.08);
+  --medium-white-button: rgba(255, 255, 255, 0.15);
+  --blue-button: rgba(41, 144, 255, 1);
+  --green-color: rgba(71, 225, 151, 1);
+  --error-color: rgba(229, 57, 53, 1);
+}
+
 body {
-  background: var(--tg-theme-secondary-bg-color, white);
+  font-family: "Inter", sans-serif;
+  background: var(--bg-color);
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }

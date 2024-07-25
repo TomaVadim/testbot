@@ -1,0 +1,36 @@
+.stepper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 16px;
+  gap: 16px;
+  padding-inline: 44px;
+  padding-block: 23px;
+  background-color: var(--small-white-button);
+}
+
+.stepper-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: solid 1px var(--medium-white-button);
+  /* background-color: var(--blue-button); */
+}
+
+.stepper-completed-icon {
+  background-color: var(--blue-button);
+  border: solid 1px var(--blue-button);
+}
+
+.stepper-text {
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.stepper-disabled-text {
+  color: var(--medium-white-button);
+}
