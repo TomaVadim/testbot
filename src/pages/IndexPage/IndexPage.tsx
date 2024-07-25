@@ -1,6 +1,6 @@
 import { type FC } from "react";
 
-import { BlurButtonWithText } from "@/components/UI/BlurButtonWithText/BlurButtonWithText";
+import { Button } from "@/components/UI/Button/Button";
 import { Typography } from "@/components/UI/Typography/Typography";
 import { Container } from "@/components/UI/Container/Container";
 import { Image } from "@/components/UI/Image/Image";
@@ -8,18 +8,10 @@ import { Image } from "@/components/UI/Image/Image";
 import ByBitLogo from "@/assets/ByBitLogo.svg";
 import IconSend from "@/assets/IconSend.svg";
 
-import { ButtonWithIcon } from "@/components/UI/ButtonWithIcon/ButtonWithIcon";
+import { ShareButton } from "@/components/UI/ShareButton/ShareButton";
 import { Stepper } from "@/components/UI/Stepper/Stepper";
 
 export const IndexPage: FC = () => {
-  const shareLink = () => {
-    const url = "https://testbot-jalb.onrender.com";
-    const text = "Поделились с друзьями программой BoostChain";
-    const shareUrl = `https://t.me/share/url?url=${url}&text=${text}`;
-
-    return <a href={shareUrl}>Поделиться</a>;
-  };
-
   return (
     <Container>
       <Image src={ByBitLogo} style={{ height: 292 }} />
@@ -32,25 +24,30 @@ export const IndexPage: FC = () => {
       </div>
 
       <div style={{ marginBlock: 12 }}>
-        <ButtonWithIcon icon={IconSend} rounded="md" onClick={shareLink}>
+        <ShareButton
+          url="https://testbot-jalb.onrender.com"
+          text="Поделиться ботом BoostChain"
+          icon={IconSend}
+          rounded="md"
+        >
           <span style={{ color: "var(--white-color)" }}>Поделиться</span>
-        </ButtonWithIcon>
+        </ShareButton>
       </div>
 
       <div style={{ marginBlock: 12 }}>
-        <BlurButtonWithText rounded="md" bgColor="blur">
+        <Button rounded="md" bgColor="blur">
           <Typography variant="h2" weight="semibold" textColor="white">
             Введите UID
           </Typography>
-        </BlurButtonWithText>
+        </Button>
       </div>
 
       <div style={{ marginBottom: 28 }}>
-        <BlurButtonWithText rounded="md" bgColor="white">
+        <Button rounded="md" bgColor="white">
           <Typography variant="h2" weight="semibold" textColor="black">
             Зарегестрироваться
           </Typography>
-        </BlurButtonWithText>
+        </Button>
       </div>
 
       <div style={{ marginBottom: 8 }}>
