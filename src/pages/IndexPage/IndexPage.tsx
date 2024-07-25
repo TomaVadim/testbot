@@ -12,6 +12,14 @@ import { ButtonWithIcon } from "@/components/UI/ButtonWithIcon/ButtonWithIcon";
 import { Stepper } from "@/components/UI/Stepper/Stepper";
 
 export const IndexPage: FC = () => {
+  const shareLink = () => {
+    const url = "https://testbot-jalb.onrender.com";
+    const text = "Поделились с друзьями программой BoostChain";
+    const shareUrl = `https://t.me/share/url?url=${url}&text=${text}`;
+
+    return <a href={shareUrl}>Поделиться</a>;
+  };
+
   return (
     <Container>
       <Image src={ByBitLogo} style={{ height: 292 }} />
@@ -24,8 +32,8 @@ export const IndexPage: FC = () => {
       </div>
 
       <div style={{ marginBlock: 12 }}>
-        <ButtonWithIcon icon={IconSend} rounded="md">
-          <span>Поделиться</span>
+        <ButtonWithIcon icon={IconSend} rounded="md" onClick={shareLink}>
+          <span style={{ color: "var(--white-color)" }}>Поделиться</span>
         </ButtonWithIcon>
       </div>
 

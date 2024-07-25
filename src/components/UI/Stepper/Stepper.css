@@ -4,7 +4,8 @@
   align-items: center;
   border-radius: 16px;
   gap: 16px;
-  padding-inline: 44px;
+  padding-left: 44px;
+  padding-right: 16px;
   padding-block: 23px;
   background-color: var(--small-white-button);
 }
@@ -12,12 +13,13 @@
 .stepper-icon {
   width: 24px;
   height: 24px;
+  min-width: 24px;
+  min-height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   border: solid 1px var(--medium-white-button);
-  /* background-color: var(--blue-button); */
 }
 
 .stepper-completed-icon {
