@@ -1,0 +1,10 @@
+.blur-button-with-text {
+  padding-block: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--medium-white-button);
+  color: var(--text-color);
+  border: none;
+}

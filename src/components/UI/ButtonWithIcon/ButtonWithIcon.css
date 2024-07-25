@@ -1,0 +1,12 @@
+.button-with-icon {
+  padding-block: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--small-white-button);
+  color: var(--text-color);
+  border: none;
+}

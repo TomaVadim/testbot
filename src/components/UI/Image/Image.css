@@ -1,0 +1,14 @@
+.image-fullwidth-wrapper {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  border-radius: 12px;
+  background-color: var(--header-bg-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.image-fullwidth {
+  max-width: 100%;
+  height: auto;
+}
